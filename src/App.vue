@@ -1,10 +1,12 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <div>
-    <h4>동재 원룸</h4>
+    <h4>{{ products[0] }}</h4>
     <p>{{ price1 }}만원</p>
-    <h4>동재 원룸2</h4>
+    <h4>{{ products[1] }}</h4>
     <p>{{ price2 }}만원</p>
+    <h4>{{ products[2] }}</h4>
+    <p>가격은 아무거나</p>
   </div>
 </template>
 
@@ -17,6 +19,7 @@ export default {
     return {
       price1 : 30,
       price2 : 50,
+      products : ['역삼동원룸', '천호동원룸', '마포구원룸'],
     }
   },
   components: {
